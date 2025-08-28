@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { games } from '../data/gameData';
 import type { Game } from '../data/gameData';
-import ProvinciaBanner from './ProvinciaBanner';
+import ProvinciaBanner from './SFBF';
 import GameCard from './GameCard';
 import { Gamepad2, Award, Users } from 'lucide-react';
 
