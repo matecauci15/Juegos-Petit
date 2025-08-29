@@ -51,9 +51,9 @@ const GameCard: React.FC<GameCardProps> = ({ game, isLarge = false, onClick }) =
           {game.title}
         </h3>
         
-        <p className={`text-gray-600 mb-4 ${isLarge ? 'text-lg' : 'text-sm'}`}>
+        {/* <p className={`text-gray-600 mb-4 ${isLarge ? 'text-lg' : 'text-sm'}`}>
           {game.description}
-        </p>
+        </p> */}
         
         <div className="flex items-center justify-between text-sm text-gray-500">
           <div className="flex items-center gap-4">

@@ -1,6 +1,5 @@
-import sfbf from '../assets/SFBF.jpg';
+import sfbf from '../assets/SFBF.gif';
 
-// Banner Juegos Suramericanos 2026 con imagen oficial (300x250px)
 const ProvinciaBanner = () => {
   return (
     <div className="flex justify-center mb-8">

@@ -2,15 +2,10 @@
 // import logo from '../assets/logo.png';
 // import { sections } from '../utils/constants';
 
-
-// interface FooterProps {
-//   setActiveSection: (section: string) => void;
-// }
-
-// const Footer: React.FC<FooterProps> = ({ setActiveSection }) => {
-//   const handleSectionClick = (section: string) => {
-//     setActiveSection(section);
-//     window.scrollTo(0, 0);
+// const Footer: React.FC = () => {
+//   const handleLinkClick = () => {
+//     // Siempre ir al inicio de la página
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
 //   };
 
 //   return (
@@ -18,7 +13,7 @@
 //       <div className="container mx-auto px-4">
 //         <div className="flex flex-col md:flex-row justify-between">
 //           <div className="mb-6 md:mb-0">
-//             <Link to="/" className="flex items-center space-x-2 mb-4">
+//             <Link to="/" className="flex items-center space-x-2 mb-4" onClick={handleLinkClick}>
 //               <img 
 //                 src={logo} 
 //                 alt="Petit Financieros" 
@@ -38,7 +33,7 @@
 //                   <li 
 //                     key={section} 
 //                     className="hover:text-white cursor-pointer"
-//                     onClick={() => handleSectionClick(section)}
+//                     onClick={handleLinkClick}
 //                   >
 //                     {section}
 //                   </li>
@@ -53,7 +48,7 @@
 //                   <li 
 //                     key={section} 
 //                     className="hover:text-white cursor-pointer"
-//                     onClick={() => handleSectionClick(section)}
+//                     onClick={handleLinkClick}
 //                   >
 //                     {section}
 //                   </li>
@@ -64,16 +59,22 @@
 //             <div>
 //               <h5 className="font-medium mb-3">Enlaces</h5>
 //               <ul className="space-y-2 text-sm text-gray-400">
-//                 <li className="hover:text-white cursor-pointer">Sobre nosotros</li>
-//                 <li className="hover:text-white cursor-pointer">Contacto</li>
-//                 <li className="hover:text-white cursor-pointer">Términos y condiciones</li>
+//                 <li className="hover:text-white cursor-pointer" onClick={handleLinkClick}>
+//                   Sobre nosotros
+//                 </li>
+//                 <li className="hover:text-white cursor-pointer" onClick={handleLinkClick}>
+//                   Contacto
+//                 </li>
+//                 <li className="hover:text-white cursor-pointer" onClick={handleLinkClick}>
+//                   Términos y condiciones
+//                 </li>
 //               </ul>
 //             </div>
 //           </div>
 //         </div>
 
 //         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
-//         <p>© {new Date().getFullYear()} Desarrollado por GauchoLab.</p>
+//           <p>© {new Date().getFullYear()} Desarrollado por GauchoLab.</p>
 //         </div>
 //       </div>
 //     </footer>
@@ -86,10 +87,19 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { sections } from '../utils/constants';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  setActiveSection: (section: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ setActiveSection }) => {
   const handleLinkClick = () => {
     // Siempre ir al inicio de la página
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleSectionClick = (section: string) => {
+    setActiveSection(section);
+    handleLinkClick();
   };
 
   return (
@@ -117,7 +127,7 @@ const Footer: React.FC = () => {
                   <li 
                     key={section} 
                     className="hover:text-white cursor-pointer"
-                    onClick={handleLinkClick}
+                    onClick={() => handleSectionClick(section)}
                   >
                     {section}
                   </li>
@@ -132,7 +142,7 @@ const Footer: React.FC = () => {
                   <li 
                     key={section} 
                     className="hover:text-white cursor-pointer"
-                    onClick={handleLinkClick}
+                    onClick={() => handleSectionClick(section)}
                   >
                     {section}
                   </li>
