@@ -266,6 +266,43 @@ export const games: Game[] = [
       'Mesa o espacio para cada "negocio"',
       'Timer para sesiones de venta'
     ]
+  },
+    {
+    id: 'juegos-dinamicas-gestion-dinero',
+    title: 'Juegos y Dinámicas para la Gestión del Dinero en Niños',
+    shortDescription: 'Colección de 5 dinámicas del "Laboratorio del Ahorro" diseñadas para enseñar gestión del dinero, ahorro responsable y toma de decisiones financieras a diferentes edades.',
+    detailedDescription: 'Esta colección forma parte del programa "Laboratorio del Ahorro" desarrollado junto con la Fundación Mutualidad Abogacía. Incluye 5 actividades específicas: "El árbol de los deseos y el árbol de la felicidad" para distinguir necesidades de deseos, "Denarius Prix" como juego de presupuesto familiar, "Maslow y las necesidades humanas" para reflexionar sobre prioridades, "El tesoro escondido en la basura" sobre economía circular, y "Fashion Revolution Day" para consumo responsable de moda. Cada actividad está adaptada por edades desde primaria hasta bachillerato, abordando conceptos desde el valor del dinero hasta decisiones de consumo sostenible.',
+    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2009&q=80',
+    difficulty: 'Fácil-Intermedio',
+    participants: '2-8 jugadores',
+    duration: '30-90 minutos por actividad',
+    ageGroup: '6-18 años',
+    tags: ['Laboratorio del Ahorro', 'Educación Financiera', 'Sostenibilidad', 'Reflexión'],
+    category: ['Ahorro', 'Consumo Responsable', 'Planificación Financiera'],
+    author: 'Siete Estrellas',
+    type: 'Colección de Dinámicas',
+    whatYouWillLearn: [
+      'Distinguir entre deseos y necesidades básicas',
+      'Comprender el valor real del dinero y lo que no se puede comprar',
+      'Gestionar presupuestos familiares de forma práctica',
+      'Aplicar la pirámide de Maslow a decisiones de consumo',
+      'Reflexionar sobre el impacto ambiental del consumo',
+      'Desarrollar conciencia sobre moda sostenible y economía circular',
+      'Tomar decisiones de compra responsables e informadas',
+      'Entender conceptos de reutilización y reciclaje aplicados al ahorro'
+    ],
+    materials: [
+      'Materiales para murales y árboles de la felicidad',
+      'Dinero ficticio para Denarius Prix',
+      'Tablero estilo "Juego de la Oca"',
+      'Materiales para Mural Thinking de Maslow',
+      'Bolsas para recolección de residuos plásticos',
+      'Mapamundi para actividad de moda',
+      'Ejemplos de ropa para upcycling',
+      'Tarjetas de pruebas y desafíos',
+      'Marcadores y material de escritura',
+      'Espacios amplios para actividades grupales'
+    ]
   }
 ];
 
