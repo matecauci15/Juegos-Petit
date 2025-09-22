@@ -4,7 +4,7 @@ const ProvinciaBanner = () => {
   return (
     <div className="flex justify-center mb-8">
       <a 
-        href="https://www.santafe.gob.ar/noticias/noticia/283634/"
+        href="https://www.santafe.gob.ar/noticias/noticia/284036/"
         target="_blank"
         rel="noopener noreferrer"
         className="block group"
