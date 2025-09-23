@@ -1,4 +1,4 @@
-import sfbf from '../assets/SFBF.gif';
+import sfbf from '../assets/sfbf2.gif';
 
 const ProvinciaBanner = () => {
   return (
